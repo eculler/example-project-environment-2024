@@ -1,0 +1,39 @@
+name: ex-project-env
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pip
+  
+  # Core scientific python
+  - numpy
+  - pandas
+  - xarray
+
+  # Data access
+  - earthaccess
+  
+  # Plotting
+  - matplotlib
+  - hvplot
+  - geoviews>=1.10
+  - selenium
+  - phantomjs
+  - jupyter_bokeh
+
+  # Spatial packages
+  - geopandas
+  - rioxarray>=0.3.0
+
+  # Jupyter Environment
+  - jupyterlab
+  - ipython
+  
+  # QA
+  - flake8
+  - flake8-import-order
+  - black
+  - pydocstyle
+  - nbqa
